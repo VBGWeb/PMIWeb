@@ -1,73 +1,106 @@
 header.masthead {
-	background-image: url(../img/bigstock-Business-Conference.jpg);
+    background-image: url(../img/imagen-fondo.jpg);
+}
+
+.btn-xl {
+    background-color: #FBC031;
+    border-color: #FBC031;
 }
 
 #mainNav img {
-	max-width: 170px;
+    max-width: 300px;
 }
 
-#mainNav  {
-	background-color: #0072ba;
+#mainNav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    
 }
 
-@media (min-width: 992px) {
-	#mainNav {
-		background-color: transparent;
-	}
-	#mainNav.navbar-shrink {
-	background-color: #0072ba;
-	}
+#mainNav .navbar-nav .nav-item .nav-link {
+	color: #0079C2;
 }
 
 @media (min-width: 992px) {
-#mainNav.navbar-shrink .navbar-brand {
-	background-color: #fff;
-	padding: 0.5rem;
-	}
+    #mainNav {
+        background-color: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 
+    }
+    #mainNav.navbar-shrink {
+        background-color: #fff;
+        color: #0079C2;
+    }
 }
+
+@media (min-width: 992px) {
+    #mainNav.navbar-shrink .navbar-brand {
+        background-color: #fff;
+        padding: 0.5rem;
+    }
+}
+
 @media (max-width: 992px) {
-	#mainNav .navbar-brand {
-	    background-color: #fff;
-	    padding: 0;    
-	}
-	.navbar .container 	{
-		margin: 0 auto;
-	}
-	.navbar {
-		padding: 0;
-	}
+    #mainNav .navbar-brand {
+        background-color: #fff;
+        padding: 0;
+    }
+    .navbar .container {
+        margin: 0 auto;
+    }
+    .navbar {
+        padding: 0;
+    }
+}
+
+header.masthead .intro-text {
+	padding-top: 100px;
+}
+
+@media (min-width: 768px) {
+    header.masthead .intro-text {
+        padding-top: 200px;
+    }
 }
 
 header.masthead .intro-text .intro-heading {
-	font-size: 60px;
+    font-family: Montserrat-ExtraBold;
+    font-size: 42px;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+    line-height: normal;
 }
 
 header.masthead .intro-text .intro-lead-in {
-	font-size: 30px;
-	font-weight: bold;
+    font-family: Montserrat-ExtraBold;
+    font-size: 36px;
+    line-height: normal;
+    font-style: initial;
+    color: #FFFFFF;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+    text-transform: uppercase;
 }
 
-header.masthead .intro-text .intro-date {
-	font-size: 40px;
+header.masthead .intro-text .subtitle {
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.80);
 }
 
 #cronograma tbody {
-	text-align: left;
+    text-align: left;
 }
 
-/*#contact {
-    background-color: #222;
-}*/
 
 .team-member .fa-linkedin {
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-	font-size: 28px;
-	line-height: 42px;
-	width: 52px;
-	height: 52px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 28px;
+    line-height: 42px;
+    width: 52px;
+    height: 52px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -79,52 +112,66 @@ header.masthead .intro-text .intro-date {
 }
 
 .team-member a {
-	position: relative;
-	display: block;
-	max-width: 225px;
-	margin: auto;
+    position: relative;
+    display: block;
+    max-width: 225px;
+    margin: auto;
 }
 
 #cronograma .hora p {
-	font-size: 25px;
-	font-family: Montserrat;
-	font-weight: 700;
-	line-height: 1.1;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 #cronograma h3 {
-	font-size: 25px;
+    font-size: 25px;
 }
 
-.tabla-cronograma, .table {
-	max-width: 600px;
-	margin: auto;
+.tabla-cronograma,
+.table {
+    max-width: 600px;
+    margin: auto;
 }
 
 #cronograma .tabla-cronograma .row {
-	padding: 14px 0 16px 0;
-	border: 1px solid #979797;
-	border-top-width: 0;	
+    padding: 14px 0 16px 0;
+    border: 1px solid #979797;
+    border-top-width: 0;
 }
 
 #cronograma .tabla-cronograma .row:first-of-type {
- border-top-width: 1px;
+    border-top-width: 1px;
 }
 
 #cronograma .tabla-cronograma .row:nth-of-type(odd) {
-	background: #E9E3E3;
+    background: #E9E3E3;
 }
 
 ul.social-buttons li a {
-	background-color: #0072ba;
+    background-color: #0072ba;
 }
 
 .table {
-	margin: 24px auto 16px auto;
-	border: 1px solid #e9ecef;
+    margin: 24px auto 16px auto;
+    border: 1px solid #979797;
 }
 
 .table th {
-	background: #E9E3E3;
+    background: #E9E3E3;
+    border-top: 1px solid #979797;
 }
 
+.table td {
+	border-top: 1px solid #979797;
+}
+
+section#contact {
+    background-color: #035A91;
+}
+
+
+#contact h3.section-subheading {
+	color: rgba(255,255,255,0.80);
+}
