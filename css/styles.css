@@ -22,10 +22,21 @@ header.masthead {
 @media (min-width: 992px) {
 #mainNav.navbar-shrink .navbar-brand {
 	background-color: #fff;
-/*	border-radius: 6px;*/
 	padding: 0.5rem;
 	}
 
+}
+@media (max-width: 992px) {
+	#mainNav .navbar-brand {
+	    background-color: #fff;
+	    padding: 0;    
+	}
+	.navbar .container 	{
+		margin: 0 auto;
+	}
+	.navbar {
+		padding: 0;
+	}
 }
 
 header.masthead .intro-text .intro-heading {
@@ -75,11 +86,45 @@ header.masthead .intro-text .intro-date {
 }
 
 #cronograma .hora p {
-	font-size: 30px;
+	font-size: 25px;
 	font-family: Montserrat;
 	font-weight: 700;
+	line-height: 1.1;
 }
 
 #cronograma h3 {
-	font-size: 24px;
+	font-size: 25px;
 }
+
+.tabla-cronograma, .table {
+	max-width: 600px;
+	margin: auto;
+}
+
+#cronograma .tabla-cronograma .row {
+	padding: 14px 0 16px 0;
+	border: 1px solid #979797;
+	border-top-width: 0;	
+}
+
+#cronograma .tabla-cronograma .row:first-of-type {
+ border-top-width: 1px;
+}
+
+#cronograma .tabla-cronograma .row:nth-of-type(odd) {
+	background: #E9E3E3;
+}
+
+ul.social-buttons li a {
+	background-color: #0072ba;
+}
+
+.table {
+	margin: 24px auto 16px auto;
+	border: 1px solid #e9ecef;
+}
+
+.table th {
+	background: #E9E3E3;
+}
+
